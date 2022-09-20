@@ -1,0 +1,61 @@
+/* Global Rules */
+:root {
+    --main-color: #39573a;
+    --second-color: #446A46;
+    --background: #82ab85
+}
+* {
+    margin: 0;
+    padding: 0
+}
+
+body { 
+    font-family: 'Poppins' , sans-serif;
+    background-color: var(--background)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px
+}
+
+header .logo img {
+    width: 180px;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer
+}
+header .logo img:hover {
+    transform: skewX(-5deg)
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    display: block;
+    height: 86px
+}
+
+header ul li a {
+    font-weight: 600;
+    font-size: 19px;
+    text-decoration: none;
+    color: #000;
+    height: 86px;
+    width: 5.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    transition: 0.5s
+}
+header ul li a:hover {
+    border-bottom: 5px solid var(--main-color);
+    background-color: #6aa26d
+}
+/* Global Rules */

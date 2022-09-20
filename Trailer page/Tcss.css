@@ -1,0 +1,99 @@
+/* Other Styles in 'global-rules.css */
+
+header {
+    padding: 0 120px;
+    border-bottom: 2px solid #446a469c;
+    background-color: #446a462e;
+    position: relative;
+}
+header ul li a {
+    color: #fff
+}
+header ul li a:hover {
+    background-color: #4e78506e;
+    border-bottom: 3px solid var(--main-color);
+}
+
+body {
+    background-image: url(images/wallpaper.jpg);
+    background-size: cover;
+    position: relative
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 55%)
+}
+
+.trailers {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.trailers .the-trailer {
+    text-align: center;
+    position: relative
+}
+.trailers .the-trailer:last-child {
+    margin: 60px 0 50px
+}
+
+.trailers .the-trailer h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px var(--main-color)
+}
+
+.trailers .the-trailer video {
+    width: 650px   
+}
+
+
+.hint {
+    color: #fff;
+    position: absolute;
+    font-family: 'Rock Salt';
+    opacity: 0.6;
+    z-index: -1;
+    animation: hin 2s linear infinite
+}
+
+@keyframes hin{
+    0% {transform:translateY(10px)}
+    100% {transform:translateY(0px) rotate(-11deg);}
+}
+
+.one {
+    left: 10px;
+    top: 30em;
+    transform: rotate(-11deg);
+    font-size: 10px;
+}
+
+.two {
+    left: 6em;
+    bottom: 6em;
+    transform: rotate(10deg);
+    font-size: 12px;
+}
+
+
+.three {
+    right: 45px;
+    bottom: 31em;
+    transform: rotate3d(0, 1, 0, 45deg);
+}
+
+
+@media (max-width: 992px) {
+    .trailers .the-trailer video {
+    width: 550px
+}   
+}
